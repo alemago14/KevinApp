@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class KevAppApplication {
+public class KevApp1Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(KevAppApplication.class, args);
+		SpringApplication.run(KevApp1Application.class, args);
 	}
 
 }
