@@ -87,6 +87,18 @@ public class ResgistroServicio {
 		}
 	}
 	
+	public Registro buscarPorEnlace(String enlace) throws Exception {
+		validarRegistro(enlace);
+		
+		Optional<Registro> resp = registroRepo.findByEnlace(enlace);
+		
+		if(resp.isPresent()) {
+			return resp.get();
+		}else {
+			return null;
+		}
+	}
+	
 	//metodo para comprobar si la variable esta vacia 
 	public void validarRegistro(String enlace) throws Exception {
 		if(enlace.isEmpty() || enlace == null) {

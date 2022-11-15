@@ -12,8 +12,11 @@
                 <h1 id="title_search_card">KevinApp</h1>
                 <img src="/imgs/personas_buscando.jpg" alt="gente_buscando" width="300px" id="img_personas_buscando">
                 <p class="paragraph_card">Colocar link o archivo<br>para analizar</p>
-                <input type="text" name="buscador" id="buscador" placeholder="Buscar...">
+                <form th:action="@{/buscar}">
+                <input type="text" name="enlace" id="enlace" placeholder="Buscar...">
+                <br>
                 <button class="btn_card"> Analizar </button>
+                </form>
             </div>
         </section>
 </body>

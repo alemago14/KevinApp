@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Kevin App</title>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/normalize.css">
+</head>
+<body>
+<section>
+            <div class="card_search_1">
+                <h1 id="title_search_card">KevinApp</h1>
+                <img src="/imgs/tilde.png" alt="gente_buscando" width="300px" id="img_seguro">
+                <p>El enlace</p>
+                <p th:text="${registro.enlace}"></p>
+                <p>Es seguro</p>
+
+                <br>
+                <a href="/"><button class="btn_card"> Volver </button></a>
+                <a href="/"><button class="btn_card"> Denunciar </button></a>
+            </div>
+        </section>
+</body>
+</html>
