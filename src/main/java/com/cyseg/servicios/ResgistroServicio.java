@@ -4,6 +4,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.cyseg.entidades.Estado;
 import com.cyseg.entidades.Registro;
@@ -21,6 +22,7 @@ public class ResgistroServicio {
 	private EstadoRepositorio estadoRepo;
 	
 	//metodo para crear un registro nuevo en la base de datos
+	@Transactional
 	public void crearRegistro(String enlace) throws Exception {
 		//creamos un objeto vacio de registro
 		Registro registro = new Registro();

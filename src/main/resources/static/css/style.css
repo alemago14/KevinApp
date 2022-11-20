@@ -1,4 +1,6 @@
+
 section{
+	font-family: Montserrat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,12 +51,17 @@ section{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #69140E;
+    background-color: #A30015;
     height: 500px;
     width: fit-content;
     border-radius: 20px;
     padding: 30px;
     box-shadow: #000 5px 5px 30px;
+}
+
+.texto_3{
+	color: white;
+	text-align: center;
 }
 
 #title_search_card{
@@ -89,7 +96,7 @@ section{
 .btn_card{
     display: inline-block;
     width: 120px;
-    font-size: 25px;
+    font-size: 20px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
